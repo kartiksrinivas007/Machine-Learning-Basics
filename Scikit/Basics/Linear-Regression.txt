@@ -1,0 +1,17 @@
+The linear regression class belongs to the linear_model class of scikit 
+we use the following trick :-
+
+the X_data should be arranged in the format of n_examples x n_features 
+then
+	model = linear_model.LinearRegression()
+	model.fit(X, y)
+	model.score(X, y)
+	model.predict(X)
+
+Train test-split can be achieved using the following 
+
+X_train , X_test, y_train, y_test = model_selection.train_test_split(X, y , test_size = 0.5, shuffle = True)
+
+Here X, y can also be pandas dataframes or even numpy arrays , both work
+
+
