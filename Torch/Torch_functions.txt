@@ -1,0 +1,10 @@
+
+If oyu want to squeeze the dimensions along some dim or basically get rid of redundant one's in the axis, use np.squeeze or torch.squeeze() instead
+
+	torch.squeeze(Tensor) -> A X B X C X 1 X D X 1 => shape becomes A X B X C X D
+Now torch.cat()i is similar to np.concatenate() use this to coancatenate tensors
+
+Tensor default dtype is torch.Float32
+
+.float() is to transfer the datatype to float32 before comparison
+
