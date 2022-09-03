@@ -1,0 +1,17 @@
+
+Optimizers 
+
+Optimizers can etiher take an iterable of parameters or thay can take a  dictionary of apramaeters which have params and other varaibles set to treat each parameter 
+differently,
+	torch.optim.SGD([v1, v2], lr =1e-2)
+	
+	for k , v in module.named_paramters(recurse = 'True') //this means that we will be recursively getting the parameter naems in form of string, aramter iteratable
+		param_group +=[{'params' : v , 'lr' : learning_rate}]
+	etc.etc
+
+module.weight
+modul.bias
+module.children()
+
+module.named_paramters retuns a list object, use an enumeratable to enumerate over it 
+module.named_modules() also returns a list object use that to find all the submodules of your module
