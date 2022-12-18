@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../CS231N-Stanford/Pytorch-Practice/pytorch-examples"
+		}
+	],
+	"settings": {}
+}
