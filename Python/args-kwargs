@@ -1,0 +1,19 @@
+def argskwargs(*args, **kwargs):
+    for arg in args:
+        print(arg)
+    for key, value in kwargs.items():
+        print(key, value)
+    for key in kwargs.keys():
+        print(key, kwargs[key])
+        
+
+#args is  a tuple while kwargs is a dict
+#then the * and ** unpacks the tuple and dict
+argskwargs(1,2,3,4,5,6,7,8,9,10, name = "John", age = 20)
+
+
+
+a  = (1, 2, 3, 4, 5)
+b = {"name": "John", "age": 20}
+
+argskwargs(*a, **b)
