@@ -1,0 +1,10 @@
+digraph G {
+cifar10c [shape="box"];
+evaluate [shape="box", color=red];
+edge [color=red];
+cifar10c -> evaluate;
+cifar10c -> setup_norm;
+cifar10c -> setup_tent;
+cifar10c -> setup_cotta;
+
+}
